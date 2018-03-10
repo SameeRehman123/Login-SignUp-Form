@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body, html{
+  font-family: 'Raleway', Arial;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(176, 176, 176);
+}
+
+input:focus{
+  outline: none;
+  border: none;
+}
+
+input{
+  border: none;
+}
+
+h3{
+  cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+  position: absolute;
+  width: 58%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#imagePanel{
+  height: 387px;
+  float: left;
+  width: 40%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/imagePanel.jpeg");
+  /* border: 1px solid #989898; */
+}
+
+#imagePanel h2{
+  font-size: 2.2em;
+  margin-top: 40px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+#imagePanel p{
+  font-size: 1.2em;
+  margin-top: 70px;
+  padding: 20px;
+  /* outline: red solid 1px; */
+  color: #fff;
+  text-align: center;
+}
+
+#mainPanel{
+  float: left;
+  width: 59%;
+}
+
+.headerLabel{
+  color: #fff;
+  background-color: #173e43;
+}
+
+#mainPanel .headerLabel .login, #mainPanel .headerLabel .sign-up{
+  min-width: 49.75%;
+  float: left;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  text-transform: uppercase;
+}
+
+#mainPanel .headerLabel .login{
+  border-right: 1px solid #989898;
+}
+
+.content{
+  position: relative;
+  perspective: 1000px;
+  box-sizing: border-box;
+}
+
+.signUp{
+  background-color: #fff;
+  transform-origin: top left;
+  display: none;
+  /* border: 1px solid #989898; */
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  /* outline: red solid 1px; */
+  padding: 20px 12px 12px 12px;
+  height: 345px;
+}
+
+.signIn{
+  background-color: #fff;
+  transform-origin: top left;
+  display: none;
+  /* border: 1px solid #989898; */
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  /* outline: red solid 1px; */
+  padding: 20px 12px 12px 12px;
+  height: 345px;
+}
+
+.username, .password, .confirmPassword, .email{
+  /* outline: red solid 1px; */
+  padding: 15px 12px 15px 12px;
+}
+
+.rememberMe, .forgotPassword{
+  float: left;
+  width: 38%;
+  padding: 0px 0px 15px 38px;
+  font-size: 0.83em;
+}
+
+.forgotPassword{
+  text-align: right;
+}
+
+i{
+  width: 35px;
+  /* outline: red solid 1px; */
+  padding-top: 3px;
+  vertical-align: middle;
+  float: left;
+}
+
+.username input, .password input, .email input, .confirmPassword input{
+  /* outline: red solid 1px; */
+  font-family: 'Raleway', Arial;
+  border-bottom: 1.5px solid rgba(94, 94, 94, 0.6);
+  padding: 7px 7px 5px 2px;
+  width: 87%;
+}
+
+.submit{
+  padding: 20px 0px 12px 0px;
+  text-align: center;
+
+}
+
+.submit input{
+  /* outline: red solid 1px; */
+  font-family: 'Raleway', Arial;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 35%;
+  height: 39px;
+  cursor: pointer;
+}
+
+.isShowing{
+  display: block;
+}
+
+
+/* Animations */
+
+.animateOut{
+  animation: out 500ms ease-in-out forwards;
+}
+
+.animateIn{
+  animation: in 800ms ease-out forwards;
+}
+
+@keyframes out {
+  0%{
+    transform: translateX(0px);
+  }
+
+  90%{
+
+  }
+
+  100%{
+    /* opacity: 0.25; */
+    opacity: 0;
+    transform: translateX(270px);
+  }
+}
+
+
+@keyframes in {
+  0%{
+    opacity: 0;
+    transform: translateY(120px);
+  }
+
+  90%{
+    /* opacity: 0; */
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

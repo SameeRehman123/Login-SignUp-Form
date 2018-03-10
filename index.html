@@ -1,0 +1,95 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Form Design</title>
+</head>
+<body>
+  <div class="container">
+
+    <section id="imagePanel">
+      <h2>Welcome</h2>
+      <p> magna quis quorum legam sint quorum noster culpa fugiat duis </p>
+    </section>
+
+    <section id="mainPanel">
+        <div class="headerLabel">
+          <div class="login">
+            <h3>Login</h3>
+          </div>
+          <div class="sign-up">
+            <h3>Sign Up</h3>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+
+        <!-- Sign In Form -->
+        <div class="content">
+            <div class="signIn isShowing">
+              <form action="">
+                <div class="username">
+                  <i class="fa fa-user-o" style="font-size: 26px;"></i>
+                  <input type="text" placeholder="Username">
+                </div>
+
+                <div class="password">
+                  <i class="fa fa-lock" style="font-size: 30px;"></i>
+                  <input type="password" placeholder="Password">
+                </div>
+
+                <div class="rememberMe">
+                  <input type="checkbox">
+                  <label>Remember Me</label>
+                </div>
+
+                <div class="forgotPassword">
+                  <a href="#">Forgot Password?</a>
+                </div>
+                <div style="clear: both;"></div>
+
+                <div class="submit">
+                  <input onsubmit="return false;" type="submit">
+                </div>
+              </form>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="signUp">
+              <form action="">
+                <div class="username">
+                  <i class="fa fa-user-o" style="font-size: 26px;"></i>
+                  <input type="text" placeholder="Username">
+                </div>
+
+                <div class="email">
+                  <i class="fa fa-envelope" style="font-size: 23px;"></i>
+                  <input type="email" placeholder="Email">
+                </div>
+
+                <div class="password">
+                  <i class="fa fa-unlock-alt" style="font-size: 26px;"></i>
+                  <input type="password" placeholder="Password">
+                </div>
+
+                <div class="confirmPassword">
+                  <i class="fa fa-lock" style="font-size: 26px;"></i>
+                  <input type="password" placeholder="Confirm Password">
+                </div>
+
+                <div class="submit">
+                  <input onsubmit="return false;" type="submit">
+                </div>
+              </form>
+            </div>
+
+        </div>
+    </section>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/animate.js"></script>
+</body>
+</html>
